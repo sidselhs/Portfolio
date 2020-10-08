@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <title>Photoshop</title>
+</head>
+
+<body>
+  <!--Fundet på stackoverflow/!-->
+  <button onclick='window.scrollTo({top: 0, behavior: "smooth"});' id="til-toppen">Til Toppen</button>
+
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="#1-semester">1. semester</a></li>
+        <li> <a href="#2-semester">2. semester</a></li>
+        <li> <a href="#3-semester">3. semester</a></li>
+        <li> <a href="#4-semester">4. semester</a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <p id="tilbage-knap"><a href="index.html">Tilbage</a></p>
+  <h1 class="side-overskrift2">Photoshop</h1>
+
+  <section id="1-semester" class="sem-opdeling">
+    <div class="billedecontainer">
+  <h2>1. semester</h2>
+  <div class="projektbilleder">
+  <img src="img-photoshop/cykel-before.jpg" alt="Before" style="width: 300px; height: 500px;">
+  <img src="img-photoshop/cykel-after.jpg" alt="After" style="width: 300px; height: 500px;">
+    </div>
+    </div>
+  </section>
+
+  <section id ="2-semester" class="sem-opdeling">
+    <div>
+  <h2>2. semester</h2>
+    </div>
+  </section>
+
+  <section id="3-semester" class="sem-opdeling">
+    <div>
+  <h2>3. semester</h2>
+    </div>
+  </section>
+
+  <section id="4-semester" class="sem-opdeling">
+    <div>
+  <h2>4. semester</h2>
+    </div>
+  </section>
+
+
+
+  <!--Fundet på w3schools/!-->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("til-toppen");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,306 @@
+* {box-sizing:border-box;}
+
+
+body {
+  background-image: url('img/blade.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #e6faf3;
+  line-height: 50px;
+  z-index: 1;
+}
+
+header ul {
+  display: inline;
+}
+header a {
+  text-decoration: none;
+  color: grey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+header li {
+  display: inline;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+header li: first-child {
+  margin-right: 25px;
+}
+
+header li a:hover {
+  color: black;
+}
+ul {
+  list-style-type: none;
+  justify-content: center;
+}
+section:not(#toppen) {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  /*Man SKAL burge display:felex for at justify-content virker*/
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  position: relative;
+  color: grey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 40px;
+  background-color: #e6faf3;
+}
+h2 {
+  margin-left: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 35px;
+}
+h3{
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+li {
+  line-height: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+}
+li a {
+  text-decoration: none;
+  color: grey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+}
+p {
+  margin-left: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  max-width: 600px;
+  font-size: 25px;
+}
+.side-overskrift {
+  font-size: 50px;
+  font-style: normal;
+  margin-left: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.beskæftigelser {
+  margin-left: 25px;
+}
+.content {
+  margin-left: 25px;
+}
+.overskrifter {
+  font-size: 35px;
+  font-weight: bolder;
+}
+.u-overskrift {
+  color: grey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.u-overskrift2 {
+  color: grey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+.keywords {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.semesterliste {
+  margin-top: 10px;
+  margin-left: 25px;
+  position: relative;
+}
+.semesterliste a:hover {
+  color: black;
+}
+.side-overskrift2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 120px;
+  color: white;
+  margin-left: 25px;
+  text-align: center;
+}
+.sem-opdeling {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  /*Man SKAL burge display:felex for at justify-content virker*/
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 25px;
+  position: relative;
+  color: grey;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 40px;
+  background-color: #e6faf3;
+}
+
+.projektbilleder {
+  display: block;
+  text-align: center;
+  width: 100%;
+
+
+}
+
+.billedecontainer {
+  width: 100%;
+}
+#tilbage-knap {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 80px;
+}
+#tilbage-knap a {
+  text-decoration: none;
+  color: grey;
+
+
+}
+#tilbage-knap a:hover {
+  color: white;
+}
+#mig {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 75px;
+  border: 2px solid white;
+  border-radius: 50%
+}
+#om-mig {
+  background-image: url('img/hørebøffer.jpg');
+  background-size: cover;
+  color: #ddd;
+  font-weight: bolder;
+}
+
+#forside-overskrift {
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 120px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+
+}
+#til-toppen {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: grey;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+  background-color: transparent;
+  scroll-behavior: smooth;
+}
+#til-toppen:hover {
+  font-weight: bold;
+  color: black;
+}
+#toppen {
+  height: 500px;
+}
+#cv{
+  display: block;
+}
+#kontakt {
+  display: block;
+  background-image: url('img/telefoner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 1;
+  }
+#portfolio {
+  display: block;
+  background-image: url('img/pink-bord.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+#toppen {
+  margin-top: 50px;
+  height: 600px
+}
+
+/*KONTAKT FORMULAR FUNDET PÅ W3SCHOOLS*/
+
+input[type=text], select, textarea {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: grey;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightgrey;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+  margin-left: 25px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .flex-container div{
+    width: 21,4;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .flex-container div{
+    width: 45,4%;
+  }
+}
+@media screen and (max-width: 400px) {
+
+  .flex-container div{
+    width: 100%;;
+  }
+}
